@@ -2,7 +2,7 @@
 
 use beryllium::*;
 use core::{
-    convert::{TryFrom, TryInto},
+    convert::TryInto,
     mem::{size_of, size_of_val},
 };
 use ogl33::*;
@@ -47,7 +47,6 @@ fn main() {
             WindowFlags::Shown,
         )
         .expect("couldn't make a window and context");
-
     win.set_swap_interval(SwapInterval::Vsync);
 
     unsafe {
